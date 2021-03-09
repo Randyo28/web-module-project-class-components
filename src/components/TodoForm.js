@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
 class TodoForm extends Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state ={
-            todoText: ''
+            todoText: ""
         }
     }
 
@@ -18,10 +18,10 @@ class TodoForm extends Component {
         e.preventDefault();
         this.props.addTodo(this.state.todoText);
         this.setState({
-            todoText: ''
+            todoText: ""
         })
-        console.log([e.target.name], e.target.value)
     }
+
 
     render() {
         return (
@@ -29,7 +29,7 @@ class TodoForm extends Component {
                <form onSubmit={this.handleSubmit}>
                    <input type="text" 
                     name= 'todoText' 
-                    value={this.state.itemText}
+                    value={this.state.todoText}
                     onChange={this.handleChanges}
                     />
                    <button>Add Todo</button>

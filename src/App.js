@@ -7,12 +7,12 @@ import './components/Todo.css';
 const todo = [
   {
   task: 'Walk dogs',
-  id: new Date(),
+  id: 5600,
   completed: false
 },
 {
   task: 'Wash Car',
-  id: new Date(),
+  id: 5601,
   completed: false
 }
 ]
